@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "gill-thin";
+  src: url("/fonts/Gilroy-Thin.ttf");
+}
+@font-face {
+  font-family: "gill-medium";
+  src: url("/fonts/Gilroy-Medium.ttf");
+}
+@font-face {
+  font-family: "gill-semibold";
+  src: url("/fonts/Gilroy-SemiBold.ttf");
+}
+@font-face {
+  font-family: "gill-extrabold";
+  src: url("/fonts/Gilroy-ExtraBold.ttf");
+}
+
+.gill-thin {
+  font-family: gill-thin;
+}
+.gill-medium {
+  font-family: gill-medium;
+}
+.gill-semibold {
+  font-family: gill-semibold;
+}
+.gill-extrabold {
+  font-family: gill-extrabold;
+}
