@@ -35,7 +35,7 @@ export default function Navbar({}) {
         <Logo />
       </div>
       <div
-        className={`bg-bg_black h-screen fixed w-full transition-all flex flex-col justify-center items-center  text-xl  lg:items-start  lg:static lg:bg-white lg:h-auto lg:w-7/12 lg:ml-4${
+        className={`bg-bg_black h-screen fixed z-10 w-full transition-all flex flex-col justify-center items-center  text-xl  lg:items-start  lg:static lg:bg-white lg:h-auto lg:w-7/12 lg:ml-4 ${
           offCanvas ? "left-0" : "-left-full"
         }`}
       >
@@ -59,7 +59,7 @@ export default function Navbar({}) {
         }}
       >
         <HiMenuAlt3
-          className={`absolute top-5 right-4 text-2xl md:text-4xl lg:hidden ${
+          className={`absolute z-20 top-5 right-4 text-2xl md:text-4xl lg:hidden ${
             offCanvas ? "text-white" : "text-black"
           }`}
         />
