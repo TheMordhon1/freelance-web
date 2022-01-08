@@ -3,6 +3,7 @@ import Link from "next/link";
 import { HiMenuAlt3 } from "react-icons/hi";
 import Logo from "./Logo";
 import ButtonNav from "./ButtonNav";
+import ButtonMobile from "./ButtonMobile";
 
 export default function Navbar({}) {
   const [offCanvas, setOffCanvas] = useState(false);
@@ -39,24 +40,13 @@ export default function Navbar({}) {
         <ul className="text-center space-y-5 lg:flex lg:flex-row lg:h-auto lg:space-y-0 lg:space-x-10 lg:w-7/12 ">
           {navItem.map((item) => (
             <Link key={item.id} href={item.href}>
-              <li className="gill-medium text-white hover:underline hover:decoration-blue decoration-4 text-base sm:text-lg md:text-2xl lg:text-black cursor-pointer">
+              <li className="gill-medium text-white hover:underline hover:decoration-blue decoration-4 text-xl sm:text-lg md:text-2xl lg:text-black cursor-pointer">
                 {item.name}
               </li>
             </Link>
           ))}
         </ul>
-        <div className="text-white flex items-center gap-5 mt-20 text-2xl lg:hidden">
-          <Link href="/signin">
-            <div className="cursor-pointer hover:underline decoration-blue">
-              Sign In
-            </div>
-          </Link>
-          <Link href="/signup">
-            <div className="border border-blue py-2 px-6 text-blue cursor-pointer hover:bg-blue hover:text-white transition-all">
-              Sign Up
-            </div>
-          </Link>
-        </div>
+        <ButtonMobile />
       </div>
       <ButtonNav className="lg:w-3/4" />
       <button
