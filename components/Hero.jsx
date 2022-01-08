@@ -32,7 +32,7 @@ export default function Hero() {
       <div className="static md:relative w-full md:w-4/12 lg:w-5/12 text-right  z-1 h-screen">
         <img
           src="/arrow-spiral.svg"
-          className="static hidden md:absolute md:-left-20 md:w-1/2 md:top-32 lg:-left-48 lg:top-32  lg:w-6/12"
+          className="static hidden md:block md:absolute md:-left-20 md:w-1/2 md:top-32 lg:-left-48 lg:top-32  lg:w-6/12"
           alt=""
         />
         <div className="static w-1/2 mx-auto mt-5 md:absolute md:w-full md:top-20 lg:top-0 right-0 ">
