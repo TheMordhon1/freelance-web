@@ -16,7 +16,7 @@ export default function Hero() {
           Letter of on become he tended active enable to. Vicinity relation
           sensible sociable surprise screened no up as.
         </p>
-        <div className="flex flex-col sm:flex-row sm:flex-row w-full text-center gap-5 mt-10 xl:text-2xl">
+        <div className="flex flex-col sm:flex-row w-full text-center gap-5 mt-10 xl:text-2xl">
           <Link href="#">
             <div className="border border-blue py-2 px-10 hover:bg-blue/100 cursor-pointer bg-blue/80 text-white transition-all">
               Get Started
