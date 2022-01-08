@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function ButtonMobile() {
   return (
-    <div className="text-white flex items-center gap-5 mt-20 text-2xl lg:hidden">
+    <div className="text-white flex items-center gap-5 mt-10 md:mt-14 text-2xl lg:hidden">
       <Link href="/signin">
         <a className="cursor-pointer hover:underline decoration-blue">
           Sign In
