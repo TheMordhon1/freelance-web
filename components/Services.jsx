@@ -1,3 +1,4 @@
+import ButtonExplore from "./ButtonExplore";
 import Section from "./Section";
 
 export default function Services() {
@@ -43,7 +44,7 @@ export default function Services() {
                 }}
                 className="flex justify-center items-center gap-2 relative overflow-hidden  lg:rounded-tl-[236px] rounded-tl-xl"
               >
-                <div className="absolute left-0 right-0 top-0 bottom-0 bg-black_dope/40"></div>
+                <div className="absolute left-0 right-0 top-0 bottom-0 bg-black_dope/50"></div>
                 <h3 className="text-white gill-bold text-center w-full md:w-1/4 text-3xl relative">
                   {filteredItem.title}
                 </h3>
@@ -62,7 +63,7 @@ export default function Services() {
                 }}
                 className="flex justify-center items-center gap-2 relative overflow-hidden lg:rounded-bl-[236px] rounded-bl-xl"
               >
-                <div className="absolute left-0 right-0 top-0 bottom-0 bg-black_dope/40"></div>
+                <div className="absolute left-0 right-0 top-0 bottom-0 bg-black_dope/50"></div>
                 <h3 className="text-white gill-bold text-center text-3xl w-1/2 relative">
                   {filteredItem.title}
                 </h3>
@@ -82,7 +83,7 @@ export default function Services() {
                 }}
                 className="flex justify-center items-center gap-2 relative overflow-hidden lg:rounded-tr-[236px] rounded-tr-xl"
               >
-                <div className="absolute left-0 right-0 top-0 bottom-0 bg-black_dope/40"></div>
+                <div className="absolute left-0 right-0 top-0 bottom-0 bg-black_dope/50"></div>
                 <h3 className="text-white gill-bold text-center  text-3xl w-1/2 relative hover:transform-cpu">
                   {filteredItem.title}
                 </h3>
@@ -101,13 +102,16 @@ export default function Services() {
                 }}
                 className="flex justify-center items-center gap-2 relative overflow-hidden lg:rounded-br-[236px] rounded-br-xl"
               >
-                <div className="absolute left-0 right-0 top-0 bottom-0 bg-black_dope/40"></div>
+                <div className="absolute left-0 right-0 top-0 bottom-0 bg-black_dope/50"></div>
                 <h3 className="text-white gill-bold text-center text-3xl w-1/2 relative">
                   {filteredItem.title}
                 </h3>
               </div>
             ))}
         </div>
+      </div>
+      <div className="text-center w-full mt-20">
+        <ButtonExplore />
       </div>
     </Section>
   );

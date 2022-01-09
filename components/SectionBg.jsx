@@ -1,9 +1,9 @@
 import Container from "./Container";
 
-export default function Section({ children, titleBlack, titleBlue, desc }) {
+export default function SectionBg({ children, titleBlack, titleBlue, desc }) {
   return (
     <Container>
-      <div className="mt-20 lg:mt-36">
+      <div className="mt-10 lg:mt-16">
         <div className="text-center w-full">
           <h1 className="gill-thin text-black text-4xl lg:text-6xl">
             {titleBlack}

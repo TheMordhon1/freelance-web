@@ -4,6 +4,7 @@ import courtesy2 from "/public/courtesy/courtesy2.png";
 import courtesy3 from "/public/courtesy/courtesy3.png";
 import courtesy4 from "/public/courtesy/courtesy4.png";
 import courtesy5 from "/public/courtesy/courtesy1.png";
+import Container from "./Container";
 
 export default function Courtesy() {
   const courtesyImg = [
@@ -14,12 +15,14 @@ export default function Courtesy() {
     { id: 5, name: courtesy5 },
   ];
   return (
-    <div className="flex gap-4 flex-wrap lg:flex-1 justify-center items-center mt-10 sm:mt-5 md:mt-10 lg:mt-64">
-      {courtesyImg.map((img) => (
-        <div key={img.id} className="w-1/4 opacity-50">
-          <Image src={img.name} layout="responsive" />
-        </div>
-      ))}
-    </div>
+    <Container>
+      <div className="flex gap-4 flex-wrap lg:flex-1 justify-center items-center mt-10 sm:mt-5 md:mt-10 lg:mt-64">
+        {courtesyImg.map((img) => (
+          <div key={img.id} className="w-1/4 opacity-50">
+            <Image src={img.name} layout="responsive" />
+          </div>
+        ))}
+      </div>
+    </Container>
   );
 }
