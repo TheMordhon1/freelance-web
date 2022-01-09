@@ -2,6 +2,7 @@ import Head from "next/head";
 import Courtesy from "../components/Courtesy";
 import Hero from "../components/Hero";
 import Layout from "../components/Layout";
+import Services from "../components/Services";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       </Head>
       <Hero />
       <Courtesy />
+      <Services />
     </Layout>
   );
 }

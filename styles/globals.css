@@ -15,6 +15,10 @@
   src: url("/fonts/Gilroy-SemiBold.ttf");
 }
 @font-face {
+  font-family: "gill-bold";
+  src: url("/fonts/Gilroy-Bold.ttf");
+}
+@font-face {
   font-family: "gill-extrabold";
   src: url("/fonts/Gilroy-ExtraBold.ttf");
 }
@@ -26,6 +30,9 @@
   font-family: gill-medium;
 }
 .gill-semibold {
+  font-family: gill-semibold;
+}
+.gill-bold {
   font-family: gill-semibold;
 }
 .gill-extrabold {

@@ -31,12 +31,16 @@ export default function Navbar({}) {
   ];
   return (
     <nav className=" lg:flex lg:items-center  lg:py-10">
-      <div className="lg:w-2/12">
-        <Logo />
+      <div
+        className={`lg:w-2/12 ${
+          offCanvas ? "fixed" : "absolute"
+        } left-5 top-5 z-20 lg:static`}
+      >
+        <Logo logo="Payme" />
       </div>
       <div
-        className={`bg-bg_black h-screen fixed z-10 w-full transition-all flex flex-col justify-center items-center  text-xl  lg:items-start  lg:static lg:bg-white lg:h-auto lg:w-7/12 lg:ml-4 ${
-          offCanvas ? "left-0" : "-left-full"
+        className={`bg-bg_black h-screen  fixed z-10 w-full transition-all flex flex-col justify-center items-center  text-xl  lg:items-start  lg:static lg:bg-white lg:h-auto lg:w-7/12 lg:ml-4 ${
+          offCanvas ? "left-0 overflow-y-hidden" : "-left-full"
         }`}
       >
         <ul className="text-center space-y-5 lg:flex lg:flex-row lg:h-auto lg:space-y-0 lg:space-x-10">
@@ -59,8 +63,8 @@ export default function Navbar({}) {
         }}
       >
         <HiMenuAlt3
-          className={`absolute z-20 top-5 right-4 text-2xl md:text-4xl lg:hidden ${
-            offCanvas ? "text-white" : "text-black"
+          className={`z-20 top-5 right-4 text-2xl md:text-4xl lg:hidden ${
+            offCanvas ? "text-white fixed" : "text-black absolute"
           }`}
         />
       </button>

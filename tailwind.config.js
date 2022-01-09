@@ -19,6 +19,7 @@ module.exports = {
     },
     colors: {
       blue: "#25A4AD",
+      black_dope: "#000000",
       black: "#313131",
       white: "#FFFFFF",
       bg_gray: "#D8D8D8",
