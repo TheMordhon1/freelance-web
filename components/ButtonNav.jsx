@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function ButtonNav() {
   return (
-    <div className="hidden lg:flex lg:justify-end lg:items-center lg:gap-5 gill-medium text-xl">
+    <div className="hidden lg:flex lg:justify-end lg:items-center lg:gap-7 gill-medium text-xl">
       <Link href="/signin">
         <div className="cursor-pointer hover:underline decoration-blue">
           Sign In
