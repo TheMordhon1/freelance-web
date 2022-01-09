@@ -35,6 +35,7 @@ export default function Services() {
             .filter((item) => item.id == 1)
             .map((filteredItem) => (
               <div
+                key={filteredItem.id}
                 style={{
                   backgroundImage: `url(${filteredItem.bgImage})`,
                   backgroundPosition: "center",
@@ -53,6 +54,7 @@ export default function Services() {
             .filter((item) => item.id == 3)
             .map((filteredItem) => (
               <div
+                key={filteredItem.id}
                 style={{
                   backgroundImage: `url(${filteredItem.bgImage})`,
                   backgroundPosition: "center",
@@ -72,6 +74,7 @@ export default function Services() {
             .filter((item) => item.id == 2)
             .map((filteredItem) => (
               <div
+                key={filteredItem.id}
                 style={{
                   backgroundImage: `url(${filteredItem.bgImage})`,
                   backgroundPosition: "center",
@@ -90,6 +93,7 @@ export default function Services() {
             .filter((item) => item.id == 4)
             .map((filteredItem) => (
               <div
+                key={filteredItem.id}
                 style={{
                   backgroundImage: `url(${filteredItem.bgImage})`,
                   backgroundPosition: "center",
