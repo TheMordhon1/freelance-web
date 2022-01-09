@@ -18,7 +18,7 @@ export default function Hero() {
         </p>
         <div className="flex flex-col sm:flex-row w-full text-center gap-5 mt-10 xl:text-2xl">
           <Link href="#">
-            <div className="border border-blue py-2 px-10 hover:bg-blue/100 cursor-pointer bg-blue/80 text-white transition-all">
+            <div className="border border-blue py-2 px-10 hover:bg-blue/100 cursor-pointer bg-blue/80 text-white/100 transition-all">
               Get Started
             </div>
           </Link>
