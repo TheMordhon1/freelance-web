@@ -15,14 +15,16 @@ export default function Courtesy() {
     { id: 5, name: courtesy5 },
   ];
   return (
-    <Container>
-      <div className="flex gap-4 flex-wrap lg:flex-1 justify-center items-center mt-10 sm:mt-5 md:mt-10 lg:mt-64">
-        {courtesyImg.map((img) => (
-          <div key={img.id} className="w-1/4 opacity-50">
-            <Image src={img.name} layout="responsive" />
-          </div>
-        ))}
-      </div>
-    </Container>
+    <div className="bg-bg_gray py-10 mt-10 sm:mt-5 md:mt-10 lg:mt-64">
+      <Container>
+        <div className="flex gap-4 flex-wrap lg:flex-1 justify-center items-center">
+          {courtesyImg.map((img) => (
+            <div key={img.id} className="w-1/4 opacity-50">
+              <Image src={img.name} layout="responsive" />
+            </div>
+          ))}
+        </div>
+      </Container>
+    </div>
   );
 }

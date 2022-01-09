@@ -42,7 +42,7 @@ export default function Services() {
                   backgroundPosition: "center",
                   height: "300px",
                 }}
-                className="flex justify-center items-center gap-2 relative overflow-hidden  lg:rounded-tl-[236px] rounded-tl-xl"
+                className="flex justify-center items-center gap-2 relative overflow-hidden  lg:rounded-tl-[55%] rounded-tl-xl"
               >
                 <div className="absolute left-0 right-0 top-0 bottom-0 bg-black_dope/50"></div>
                 <h3 className="text-white gill-bold text-center w-full md:w-1/4 text-3xl relative">
@@ -61,7 +61,7 @@ export default function Services() {
                   backgroundPosition: "center",
                   height: "300px",
                 }}
-                className="flex justify-center items-center gap-2 relative overflow-hidden lg:rounded-bl-[236px] rounded-bl-xl"
+                className="flex justify-center items-center gap-2 relative overflow-hidden lg:rounded-bl-[55%] rounded-bl-xl"
               >
                 <div className="absolute left-0 right-0 top-0 bottom-0 bg-black_dope/50"></div>
                 <h3 className="text-white gill-bold text-center text-3xl w-1/2 relative">
@@ -81,7 +81,7 @@ export default function Services() {
                   backgroundPosition: "center",
                   height: "300px",
                 }}
-                className="flex justify-center items-center gap-2 relative overflow-hidden lg:rounded-tr-[236px] rounded-tr-xl"
+                className="flex justify-center items-center gap-2 relative overflow-hidden lg:rounded-tr-[55%] rounded-tr-xl"
               >
                 <div className="absolute left-0 right-0 top-0 bottom-0 bg-black_dope/50"></div>
                 <h3 className="text-white gill-bold text-center  text-3xl w-1/2 relative hover:transform-cpu">
@@ -100,7 +100,7 @@ export default function Services() {
                   backgroundPosition: "center",
                   height: "300px",
                 }}
-                className="flex justify-center items-center gap-2 relative overflow-hidden lg:rounded-br-[236px] rounded-br-xl"
+                className="flex justify-center items-center gap-2 relative overflow-hidden lg:rounded-br-[55%] rounded-br-xl"
               >
                 <div className="absolute left-0 right-0 top-0 bottom-0 bg-black_dope/50"></div>
                 <h3 className="text-white gill-bold text-center text-3xl w-1/2 relative">

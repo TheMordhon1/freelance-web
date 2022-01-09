@@ -45,3 +45,7 @@
 .gill-extrabold {
   font-family: gill-extrabold;
 }
+
+.carousel-container {
+  width: 100%;
+}

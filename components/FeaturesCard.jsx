@@ -38,10 +38,12 @@ export default function FeaturesCard() {
       {itemFeatures.map((item) => (
         <div key={item.id}>
           <Link href={item.href}>
-            <div className="relative py-8 px-5 bg-white flex flex-col gap-5 cursor-pointer hover:shadow-black transition-all hover:scale-105">
-              <h3 className="text-black gill-semibold text-xl">{item.title}</h3>
+            <div className="relative py-8 px-5 bg-white flex flex-col gap-5 cursor-pointer group group-hover:shadow-xl transition-all hover:scale-105">
+              <h3 className="text-black gill-semibold text-xl group-hover:text-blue">
+                {item.title}
+              </h3>
               <p className="gill-regular text-[14px]">{item.desc}</p>
-              <span className="underline decoration-black gill-medium">
+              <span className="underline decoration-black gill-medium group-hover:decoration-blue group-hover:text-blue">
                 Learn More
               </span>
             </div>
