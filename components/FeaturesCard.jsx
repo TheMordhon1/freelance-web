@@ -36,14 +36,14 @@ export default function FeaturesCard() {
   return (
     <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 text-center">
       {itemFeatures.map((item) => (
-        <div key={item.id}>
+        <div key={item.id} className="group">
           <Link href={item.href}>
-            <div className="relative py-8 px-5 bg-white flex flex-col gap-5 cursor-pointer group group-hover:shadow-xl transition-all hover:scale-105">
+            <div className="relative  py-8 px-5 group-hover:bg-white flex flex-col gap-5 cursor-pointer border-2 border-gray group-hover:border-none transition-all hover:scale-105">
               <h3 className="text-black gill-semibold text-xl group-hover:text-blue">
                 {item.title}
               </h3>
               <p className="gill-regular text-[14px]">{item.desc}</p>
-              <span className="underline decoration-black gill-medium group-hover:decoration-blue group-hover:text-blue">
+              <span className="underline decoration-gray gill-medium group-hover:decoration-blue group-hover:text-blue">
                 Learn More
               </span>
             </div>

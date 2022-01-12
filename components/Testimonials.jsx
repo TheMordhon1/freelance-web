@@ -70,7 +70,12 @@ export default function Testimonials() {
         arrows={false}
         renderButtonGroupOutside={true}
         customButtonGroup={<ArrowGroup />}
-        itemClass="px-4 mb-5"
+        itemClass="px-0 md:px-4 mb-5 transition-all"
+        autoPlay={true}
+        infinite={true}
+        autoPlaySpeed={5000}
+        keyBoardControl={true}
+        transitionDuration={1000}
       >
         {clientSays.map((item) => (
           <div
@@ -82,7 +87,7 @@ export default function Testimonials() {
               alt="user1"
               className="md:w-4/12 md:rounded-tl-xl lg:rounded-tl-[45%] lg:w-5/12 "
             />
-            <div className="text-black flex flex-col justify-center items-center p-10 md:w-8/12 md:rounded-br-xl md:items-start bg-bg_gray  lg:w-7/12 md:py-10 md:px-10  lg:rounded-br-[45%]">
+            <div className="text-black flex flex-col justify-center items-center p-5 md:p-10 md:w-8/12 md:rounded-br-xl md:items-start bg-bg_gray  lg:w-7/12 md:py-10 md:px-10  lg:rounded-br-[45%]">
               <h2 className="gill-semibold text-xl">{item.status}</h2>
               <p className="text-base gill-regular mt-4 text-center md:text-left">
                 {item.says}
