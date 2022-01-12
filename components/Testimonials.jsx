@@ -70,12 +70,10 @@ export default function Testimonials() {
         arrows={false}
         renderButtonGroupOutside={true}
         customButtonGroup={<ArrowGroup />}
-        itemClass="px-0 md:px-4 mb-5 transition-all"
+        itemClass="px-0 md:px-4 mb-5"
         autoPlay={true}
         infinite={true}
         autoPlaySpeed={5000}
-        keyBoardControl={true}
-        transitionDuration={1000}
       >
         {clientSays.map((item) => (
           <div
