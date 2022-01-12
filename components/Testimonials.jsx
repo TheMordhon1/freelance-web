@@ -2,6 +2,11 @@ import Section from "./Section";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import ArrowGroup from "./ArrowGroup";
+import Image from "next/image";
+import user1 from "/public/user/user1.png";
+import user2 from "/public/user/user2.png";
+import user3 from "/public/user/user3.png";
+import user4 from "/public/user/user4.png";
 
 export default function Testimonials() {
   const clientSays = [
@@ -11,7 +16,7 @@ export default function Testimonials() {
       says: "Outward clothes promise at gravity do excited. Sufficient particular impossible by reasonable oh expression is. Yet preference connection unpleasant yet melancholy but end appearance. And excellence partiality estimating terminated day everything.",
       position: "Director at Behance",
       status: "Pro",
-      photo: "/user/user1.png",
+      photo: user1,
     },
     {
       id: 2,
@@ -19,7 +24,7 @@ export default function Testimonials() {
       says: "Outward clothes promise at gravity do excited. Sufficient particular impossible by reasonable oh expression is. Yet preference connection unpleasant yet melancholy but end appearance. And excellence partiality estimating terminated day everything.",
       position: "Senior Engineer at Wallmart",
       status: "Expert",
-      photo: "/user/user2.png",
+      photo: user2,
     },
     {
       id: 3,
@@ -27,7 +32,7 @@ export default function Testimonials() {
       says: "Outward clothes promise at gravity do excited. Sufficient particular impossible by reasonable oh expression is. Yet preference connection unpleasant yet melancholy but end appearance. And excellence partiality estimating terminated day everything.",
       position: "IT Consultant at Tesla",
       status: "Beginner",
-      photo: "/user/user3.png",
+      photo: user3,
     },
     {
       id: 4,
@@ -35,7 +40,7 @@ export default function Testimonials() {
       says: "Outward clothes promise at gravity do excited. Sufficient particular impossible by reasonable oh expression is. Yet preference connection unpleasant yet melancholy but end appearance. And excellence partiality estimating terminated day everything.",
       position: "Backend Developer at GitHub",
       status: "Expert",
-      photo: "/user/user4.png",
+      photo: user4,
     },
   ];
 
@@ -80,11 +85,9 @@ export default function Testimonials() {
             className=" flex flex-col gap-0 md:flex-row w-full md:gap-5"
             key={item.id}
           >
-            <img
-              src={item.photo}
-              alt="user1"
-              className="md:w-4/12 md:rounded-tl-xl lg:rounded-tl-[45%] lg:w-5/12 "
-            />
+            <div className="md:w-4/12 md:rounded-tl-xl lg:rounded-tl-[45%] lg:w-5/12 overflow-hidden">
+              <Image src={item.photo} alt={item.name} objectFit="cover" />
+            </div>
             <div className="text-black flex flex-col justify-center items-center p-5 md:p-10 md:w-8/12 md:rounded-br-xl md:items-start bg-bg_gray  lg:w-7/12 md:py-10 md:px-10  lg:rounded-br-[45%]">
               <h2 className="gill-semibold text-xl">{item.status}</h2>
               <p className="text-base gill-regular mt-4 text-center md:text-left">
