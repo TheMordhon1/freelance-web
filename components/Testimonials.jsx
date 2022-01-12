@@ -70,7 +70,6 @@ export default function Testimonials() {
       desc="Letter of on become he tended active enable to. Vicinity relation sensible sociable surprise screened no up as."
     >
       <Carousel
-        infinite
         responsive={responsive}
         arrows={false}
         renderButtonGroupOutside={true}
