@@ -43,7 +43,7 @@ export default function FooterMenu(params) {
           <h4 className="gill-bold text-lg">{item.name}</h4>
           <ul className="mt-2 md:mt-5">
             {item.menus.map((menu, index) => (
-              <Link key={index} href={menu.href}>
+              <Link passHref key={index} href={menu.href}>
                 <li className="mt-2 gill-medium hover:underline hover:decoration-blue cursor-pointer text-sm md:text-base">
                   {menu.menu}
                 </li>

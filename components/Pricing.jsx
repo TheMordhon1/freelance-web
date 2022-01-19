@@ -61,7 +61,7 @@ export default function Pricing() {
                 ))}
               </ul>
               <div className="mt-14 block w-full">
-                <Link href="/all">
+                <Link passHref href="/all">
                   <span className="border border-blue py-4 px-12 text-lg md:text-2xl text-blue hover:bg-blue group-hover:bg-blue/80 transition-all hover:text-white group-hover:text-white cursor-pointer">
                     Request Demo
                   </span>

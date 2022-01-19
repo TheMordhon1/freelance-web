@@ -20,7 +20,7 @@ export default function Courtesy() {
         <div className="flex gap-4 flex-wrap lg:flex-1 justify-center items-center">
           {courtesyImg.map((img) => (
             <div key={img.id} className="w-1/4 opacity-50">
-              <Image src={img.name} layout="responsive" />
+              <Image src={img.name} layout="responsive" alt={img.name} />
             </div>
           ))}
         </div>

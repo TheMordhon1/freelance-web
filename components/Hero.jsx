@@ -19,12 +19,12 @@ export default function Hero() {
             sensible sociable surprise screened no up as.
           </p>
           <div className="flex relative z-10 flex-col sm:flex-row w-full text-center gap-5 mt-10 text-lg md:text-xl lg:text-2xl">
-            <Link href="#">
+            <Link passHref href="#">
               <div className="border border-blue py-2 px-10 hover:bg-blue/100 cursor-pointer bg-blue/80 text-white/100 transition-all">
                 Get Started
               </div>
             </Link>
-            <Link href="/signup">
+            <Link passHref href="/signup">
               <div className="border border-blue py-2 px-10 text-blue cursor-pointer hover:bg-blue hover:text-white transition-all">
                 Explore
               </div>
@@ -38,12 +38,12 @@ export default function Hero() {
             alt=""
           />
           <div className="w-1/2 mx-auto -z-0 opacity-30 md:opacity-100 mt-5 absolute right-0 md:-right-20 md:w-full md:top-20 lg:top-0 lg:right-0 ">
-            <Image src={heroImage} />
+            <Image src={heroImage} alt="Hero Image" />
           </div>
           <img
             src="/blue-square.svg"
             className="static md:absolute md:-left-14  bottom-18 -z-10 md:w-1/4 md:bottom-40 lg:-left-28 lg:bottom-24"
-            alt=""
+            alt="decoration"
           />
         </div>
       </div>

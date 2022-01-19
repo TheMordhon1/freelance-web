@@ -47,7 +47,7 @@ export default function Navbar({}) {
         >
           <ul className="text-center space-y-5 lg:flex lg:flex-row lg:h-auto lg:space-y-0 lg:space-x-10">
             {navItem.map((item) => (
-              <Link key={item.id} href={item.href}>
+              <Link passHref key={item.id} href={item.href}>
                 <li className="gill-medium text-white hover:underline hover:decoration-blue decoration-4 text-xl  lg:text-black cursor-pointer">
                   {item.name}
                 </li>
