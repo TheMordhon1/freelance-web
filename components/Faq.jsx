@@ -13,26 +13,27 @@ export default function Faq() {
   };
   const Faqs = [
     {
+      id: 1,
       question:
         "She met humoured sir breeding her. Six curiosity day assurance bed necessary.",
       answer:
         "Relation so in confined smallest children unpacked delicate. Why sir end believe uncivil respect. Always get adieus nature day course for common. My little garret repair to desire he esteem.",
     },
     {
-      id: "b",
+      id: 2,
       question:
         "And excellence partiality estimating terminated day everything?",
       answer:
         "Relation so in confined smallest children unpacked delicate. Why sir end believe uncivil respect. Always get adieus nature day course for common. My little garret repair to desire he esteem.",
     },
     {
-      id: "c",
+      id: 3,
       question: "Latter person am secure of estate genius at?",
       answer:
         "Relation so in confined smallest children unpacked delicate. Why sir end believe uncivil respect. Always get adieus nature day course for common. My little garret repair to desire he esteem.",
     },
     {
-      id: "d",
+      id: 4,
       question: "Whatever landlord yourself at by pleasure of children be?",
       answer:
         "Relation so in confined smallest children unpacked delicate. Why sir end believe uncivil respect. Always get adieus nature day course for common. My little garret repair to desire he esteem.",
@@ -43,10 +44,12 @@ export default function Faq() {
     <div className="pt-10 pb-20 bg-bg_whitegray mt-28">
       <SectionBg titleBlue="FAQs">
         {Faqs.map((item, index) => (
-          <article className="flex flex-col gap-4 mb-5 bg-white p-5 md:py-8 md:px-10 w-full md:w-7/12 mx-auto shadow-lg">
+          <article
+            key={item.id}
+            className="flex flex-col gap-4 mb-5 bg-white p-5 md:py-8 md:px-10 w-full md:w-7/12 mx-auto shadow-lg"
+          >
             <header
               onClick={() => toggle(index)}
-              key={index}
               className="cursor-pointer flex items-center gap-4 "
             >
               <button className="text-blue text-xl md:text-3xl">
