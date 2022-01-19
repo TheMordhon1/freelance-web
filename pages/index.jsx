@@ -3,6 +3,7 @@ import Courtesy from "../components/Courtesy";
 import Features from "../components/Features";
 import Hero from "../components/Hero";
 import Layout from "../components/Layout";
+import Pricing from "../components/Pricing";
 import Services from "../components/Services";
 import Testimonials from "../components/Testimonials";
 
@@ -19,6 +20,7 @@ export default function Home() {
       <Services />
       <Features />
       <Testimonials />
+      <Pricing />
     </Layout>
   );
 }

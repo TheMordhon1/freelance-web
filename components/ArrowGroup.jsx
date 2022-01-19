@@ -4,7 +4,7 @@ export default function ArrowGroup({ next, previous }) {
       <div className="group">
         <div
           onClick={() => previous()}
-          className=" border px-3 py-2 border-blue rounded-2xl  group-hover:bg-blue transition-all text-center cursor-pointer bg-pink-600"
+          className=" border px-3 py-2 border-blue rounded-2xl  group-hover:bg-blue transition-all text-center cursor-pointer"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +25,7 @@ export default function ArrowGroup({ next, previous }) {
       <div className="group">
         <div
           onClick={() => next()}
-          className=" border px-3 py-2 border-blue group-hover:bg-blue transition-all rounded-2xl text-center cursor-pointer bg-pink-600"
+          className=" border px-3 py-2 border-blue group-hover:bg-blue transition-all rounded-2xl text-center cursor-pointer"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
