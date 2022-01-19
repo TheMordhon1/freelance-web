@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Courtesy from "../components/Courtesy";
+import Faq from "../components/Faq";
 import Features from "../components/Features";
 import Hero from "../components/Hero";
 import Layout from "../components/Layout";
@@ -21,6 +22,7 @@ export default function Home() {
       <Features />
       <Testimonials />
       <Pricing />
+      <Faq />
     </Layout>
   );
 }

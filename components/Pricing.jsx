@@ -1,5 +1,6 @@
 import Section from "./Section";
 import { AiFillCheckCircle } from "react-icons/ai";
+import Link from "next/link";
 
 export default function Pricing() {
   const PricingItems = [
@@ -45,10 +46,10 @@ export default function Pricing() {
       <div className="grid lg:grid-cols-3 gap-6 grid-cols-1">
         {PricingItems.map((item) => (
           <div className="group" key={item.id}>
-            <div className="border-2 border-gray group-hover:border-white text-black group-hover:text-blue group-hover:scale-105 px-8 py-10 text-center transition-all relative">
+            <div className="border-2 border-gray group-hover:border-white text-black group-hover:text-blue group-hover:scale-105 group-hover:-mt-7 px-8 py-10 text-center transition-all relative group-hover:shadow-2xl">
               <h3 className="gill-semibold text-2xl">{item.name}</h3>
               <h2 className="gill-bold text-5xl mt-6">{item.price}</h2>
-              <ul className="mt-10">
+              <ul className="mt-10 text-left">
                 {item.offers.map((offer, index) => (
                   <li
                     key={index}
@@ -59,6 +60,13 @@ export default function Pricing() {
                   </li>
                 ))}
               </ul>
+              <div className="mt-14 block w-full">
+                <Link href="/all">
+                  <span className="border border-blue py-4 px-12 text-lg md:text-2xl text-blue hover:bg-blue group-hover:bg-blue/80 transition-all hover:text-white group-hover:text-white cursor-pointer">
+                    Request Demo
+                  </span>
+                </Link>
+              </div>
             </div>
           </div>
         ))}

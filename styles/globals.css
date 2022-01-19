@@ -49,3 +49,12 @@
 .carousel-container {
   width: 100%;
 }
+
+@layer component {
+  .accordion {
+    @apply border-none;
+  }
+  .accordion__button {
+    @apply bg-white;
+  }
+}
